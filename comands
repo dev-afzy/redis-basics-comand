@@ -1,0 +1,78 @@
+✏️ Set Key value pair
+set <key> <value>
+
+📺️ Get value
+get <key>
+
+🚮️ delete key
+del <key>
+
+🔐️ Check key exists
+exists <key>
+
+🤗️Subscribe 
+subscribe <channel name>
+
+✍️Publish <channel name> <message>
+Publish <channel name> <message>
+
+👨‍👨‍👧‍👦️ Return all keys
+Keys *
+
+👩‍❤️‍👩️ Return Matching keys
+keys <key-name pattern>*
+
+🗑️Delete All keys from DB
+flushall
+
+⏲️Check key expiration
+ttl name
+
+✏️⏲️ Set expiration time to key
+expire < key > time(seconds) 
+
+✏️⏲️ Set expiration time to key value
+setex name 10 afees
+
+🗒️ create and push to list start index
+lpush < list name> item
+
+🗒️ create and push to list last index
+rpush < list name> item
+
+🗒️🚮️ delete from start index of list
+lpop < list name > < count>
+
+🗒️🚮️ delete from last index of list
+rpop < list name > < count >
+
+📖️ Get from the list
+lrange < key name > < start >  < stop >
+
+📚️ Add value to set
+sadd < set name > <value>
+
+📑️ get value from set
+smembers < set name >
+
+📑️🚮️ Delete a value from set
+spop < set name > <count>
+
+📑️🚮️ remove specific value from set
+srem < set name > < value>
+
+🈂️ Add values to Hash map
+Hset < key >  < field >  < value >
+
+🈂️📖️ Get a value from Hash map
+Hget < key >  < field > 
+
+🈂️📖️ Get all values from Hash map
+Hgetall < key >
+
+
+🈂️📖️ delete a value from Hash map
+hdel < key > < value >
+
+🈂️🔐️ check value exists in Hash map
+hexists < key > < value >
